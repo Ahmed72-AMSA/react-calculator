@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 
-this my react app source code and you can use it in this link :- https://amsa-react-calc.netlify.app/
+this my react app source code and you can use it in this link :- https://amsa-react-calculator.netlify.app/
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
