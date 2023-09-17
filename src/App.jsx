@@ -63,12 +63,18 @@ function App() {
 
 
 
+  let val = 0;
 
   const updateCalc = value =>{
     if(ops.includes(value) && calc === '' || 
       ops.includes(value) && ops.includes(calc.slice(-1)))
     {
       return;
+    }
+
+
+    if(!ops.includes(value)){
+      setResult(eval(calc+value).toString());
     }
 
 
@@ -80,24 +86,29 @@ function App() {
 
   
   
-    setCalc(calc.slice(0,4)+value);
+    setCalc(calc+value);
+
+    val = value;
+
+
   
-    if(!ops.includes(value)){
-      setResult(eval(calc+value).toString());
-    }
+  
+
   }
-
-
-
-
-
-
-  
 
   const calculate = () => {
-    setCalc(eval(calc).toString());
+    setCalc(result.toString());
 
   }
+
+
+
+
+
+
+  
+
+
 
 
 
